@@ -71,7 +71,7 @@ function updateRemainingCount() {
   remaining.textContent = items.filter((i) => !i.purchased).length;
 }
 
-function updateTotal(){
+function updateTotal() {
   total.innerHTML = money(items.filter((i) => !i.purchased).reduce((s, i) => s + i.price, 0));
 }
 
